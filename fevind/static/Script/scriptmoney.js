@@ -202,8 +202,6 @@ async function mainMoney(){
 
     valider.addEventListener('click', () => {
         conv(sommei);
-        console.log('click');
-        console.log(sommei);
     });
 
 }
