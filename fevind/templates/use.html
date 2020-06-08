@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>FEVND</title>
+    <meta charset="utf-8">
+    <link href="{{ url_for('static', filename='./Styles/styles.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header1container">
+                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='./Img/FEVND logoround.png') }}" onmouseover="this.src='../static/Img/FEVND logoround2.png'" onmouseout="this.src='../static/Img/FEVND logoround.png'" /></a>
+                <ul class="menu">
+                    <li class="menuli"><a href="{{ url_for('use') }}">Utiliser</a></li>
+                    <li class="menuli"><a href="{{ url_for('about') }}"> À propos</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <h1 class="accounttxt"><a href="{{ url_for('me') }}">Mon compte</a></h1>
+                <div class="accountimg"><a href="{{ url_for('me') }}"><img src="{{ url_for('static', filename='./Img/FEVND account.png') }}" alt="account"></a></div>
+            </div>
+        </div>
+        <div class="headermobil" id="headermobil">
+            <a href="{{ url_for('index') }}"><img src="../static/Img/FEVND logoround.png" onmouseover="this.src='../static/Img/FEVND logoround2.png'" onmouseout="this.src='../static/Img/FEVND logoround.png'" /></a>
+            <div class="hamburger" onclick="myFunction(this),burger()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
+        </div>
+        <div class="menumobilcontainer" id="menumobilcontainer">
+            <ul class="menumobil">
+                <li><a href="{{ url_for('index') }}">Menu</a></li>
+                <li><a href="{{ url_for('use') }}">Utiliser</a></li>
+                <li><a href="{{ url_for('about') }}"> À propos</a></li>
+                <li><a href="{{ url_for('me') }}">Mon compte</a></li>
+            </ul>
+        </div>
+    </header>
+<div class= "content">
+    <div class ="title">
+        <h1>FEVND</h1>
+        <h2>coins</h2>
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+        </p>
+    </div>
+
+
+    
+</div>
+
+<footer>
+    <div>
+        <p class="copyright">
+            Copyright &copy; PN 2020
+        </p>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='./Script/script.js') }}"></script>
+</body>
+</html>
